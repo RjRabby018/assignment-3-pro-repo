@@ -17,26 +17,35 @@
     <script src="https://kit.fontawesome.com/43132b4929.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="bg-[#FFF9F4] py-7 ">
-         <div class="flex mx-auto w-4/5 items-center justify-between">
+    <!-- <nav class=" bg-[#FFF9F4] py-7 "> -->
+      <nav class="bg-[#FFF9F4] py-7 border-2 border-black sm:border-0">
+
+         <div class="flex mx-auto w-4/5 items-center justify-between ">
+          <!-- nav logo and name -->
             <div class="flex items-center">
                 <img src="c1-assets/logo-header.png" alt="">
-                <p class="text-[26px] font-normal ml-3">Browse<span class="text-yellow-300">4</span>Pets</p>
+                <p class="hidden sm:block md:text-[26px] font-normal ml-3">Browse<span class="text-yellow-300">4</span>Pets</p>
             </div>
-            <div class="flex text-xl font-normal text-gray-800 gap-x-8">
+            <!-- nav contact section -->
+            <div class="hidden lg:flex text-xl font-normal text-gray-800 gap-x-8">
                 <p>Find a pet</p>
                 <p>Breeds</p>
                 <p>Contact us</p>
-                <!-- button section -->
             </div>
-            <div>
+              <!-- button section -->
+            <div class="hidden sm:block">
                 <i class="fa-regular fa-bell m-2"></i>
                 <i class="fa-solid fa-magnifying-glass m-2"></i>
                 <button class="btn btn-outline text-gray-600 border border-5 border-yellow-300 m-2">Login</button>
-                <!-- <button class="h-[45px] w-36 bg-yellow-400 text-xl rounded-lg font-normal flex items-center">Register</button> -->
                 <button class="btn btn-warning">Register</button>
+            </div>
+              <!-- test section -->
+            <div class="block sm:hidden">
+              <i class="fa-solid fa-bars"></i>
             </div>
          </div>
     </nav>
+  
+    
 </body>
 </html>
